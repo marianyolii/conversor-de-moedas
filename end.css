@@ -1,0 +1,127 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c1f8f8;
+    color: #333;
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    height: 100vh;            /* Ocupa toda a altura da tela */
+    margin: 0;
+}
+
+/* Container principal */
+.container {
+    background-color: rgb(120, 225, 233);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; /* Limita a largura do container */
+}
+
+/* Estilo do cabeçalho */
+.header h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+/* Estilo para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+/* Grupos de entrada */
+.input-group, .select-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para o input de valor */
+.currency-input {
+    display: flex;
+    align-items: center;
+    background-color: #f8fafa;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#currencySymbol {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#Tamanho {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+}
+
+/* Estilo para os select boxes */
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid rgb(194, 235, 252);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+/* Estilo para o botão reset */
+#ResetButton {
+    background-color: #f44336;
+}
+
+#ResetButton:hover {
+    background-color: #e53935;
+}
+
+/* Estilo do resultado da conversão */
+#conversao {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+    form {
+        gap: 15px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
